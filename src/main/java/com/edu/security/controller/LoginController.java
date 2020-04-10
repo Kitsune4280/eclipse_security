@@ -1,10 +1,10 @@
 package com.edu.security.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 @RequestMapping("/")
 public class LoginController {
 	
@@ -15,7 +15,7 @@ public class LoginController {
 	
 	@GetMapping("welcome")
 	String getWelcome() {
-		return "welcome";
+		return "You have got an access to API routes";
 	}
 
 }

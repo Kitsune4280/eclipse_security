@@ -76,6 +76,9 @@ public class JwtUsernameAndPasswordAuthenticationFilter extends UsernamePassword
                 .signWith(key)
                 .compact();
 
+        response.addHeader("Access-Control-Allow-Headers", 
+        		"Authorixation, X-PINGOTHER, Origin, X-requested-With, Content-Type, Accept, X-Custom-Header");
+        response.addHeader("Access-Control-Expose-Headers", "Authorization");
         response.addHeader(this.jwtConfig.getAuthorizationHeader(), this.jwtConfig.getTokenPrefix() + token);
     }
     
