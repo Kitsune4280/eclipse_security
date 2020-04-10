@@ -1,4 +1,4 @@
-package jwt;
+package com.edu.security.jwt;
 
 public class UsernameAndPasswordAuthenticationRequest {
 	private String username;

@@ -1,4 +1,4 @@
-package jwt;
+package com.edu.security.jwt;
 
 import java.io.IOException;
 import java.util.List;

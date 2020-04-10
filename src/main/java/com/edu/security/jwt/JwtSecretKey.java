@@ -1,4 +1,4 @@
-package jwt;
+package com.edu.security.jwt;
 
 import javax.crypto.SecretKey;
 
